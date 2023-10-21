@@ -1,0 +1,22 @@
+﻿@model List<School.Models.StudentTeacherViewModel>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Class</th>
+            <th>Teacher Name</th>
+            <th>Student Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var new_student in Model)
+        {
+            <tr>
+                <td>@new_student.class_room</td>
+                <td>@new_student.teacher_name</td>
+                <td>@new_student.student_name</td>
+            </tr>
+        }
+    </tbody>
+    </table>
